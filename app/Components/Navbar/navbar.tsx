@@ -65,7 +65,7 @@ export default function Navbar() {
       <div className="flex items-center justify-between px-[8%] 1g:px-[12%] py-1">
         <div className="flex items-center gap-5">
           <Link href="/" className="text-5xl font-bold Audiowide text-(--black)">
-            <Image src={"/logo/delux.png"} alt="delux logo" width={150} height={150}/>
+            <Image src={"/logo/delux.png"} alt="delux logo" width={130} height={130}/>
           </Link>
           <nav className="hidden lg:flex space-x-6 menu-link relative ms-10">
             {navLinks.map((link)=>
