@@ -3,6 +3,17 @@ import Image from "next/image";
 import HeroImg2 from "@/public/hero-img2.jpg"
 import HeroImg from "@/public/Hero-img.jpg"
 import Link from "next/link"
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import { Autoplay } from "swiper/modules";
+import partner1 from "@/public/partner1.svg"
+import partner2 from "@/public/partner2.svg"
+import partner3 from "@/public/partner3.svg"
+import partner4 from "@/public/partner4.svg"
+import partner5 from "@/public/partner5.svg"
+import partner6 from "@/public/partner6.svg"
+
+const Partners = [partner1,partner2,partner3,partner4,partner5,partner6];
 
 export default function Hero() {
   return (
@@ -24,7 +35,7 @@ export default function Hero() {
                          Get Our Service <i className="bi bi-arrow-right ps-1"></i>
                         </Link>
                         </button>
-                        <div className="hero-content-img absolute top-10 right-10 cursor-pointer hidden md:block">
+                        <div className="hero-content-img absolute top-10 right-4 cursor-pointer hidden md:block">
                           <Image src={HeroImg2} alt="heroimage" className="rounded-full"/>
                           <i className="bi bi-play-fill"></i>
                         </div>
@@ -39,7 +50,20 @@ export default function Hero() {
         </div>
     </div>
     <div className="px-[8%] lg:px-[12%] pb-10">
-
+      <Swiper slidesPerView={5} spaceBetween={30} loop={true} autoplay={{delay:1500}} modules={[Autoplay]} breakpoints={{
+        1200:{slidesPerView:5},
+        991:{slidesPerView:4},
+        575:{slidesPerView:2},
+        0:{slidesPerView:2}
+      }}
+      className="partner-swiper"
+      >
+      {Partners.map((img,index)=>(
+        <SwiperSlide key={index}>
+          <Image src={img} alt="Partnersimage" className="partner-img"/>
+        </SwiperSlide>
+      ))}
+      </Swiper>
     </div>
     </>
   )
