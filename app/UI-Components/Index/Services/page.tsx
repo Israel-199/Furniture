@@ -11,12 +11,12 @@ export default function Services() {
       <div className="px-[8%] lg:px-[12%] py-20 pt-20 pb-60 service relative">
          <div className="flex flex-col lg:flex-row gap-20">
             <div className="w-full lg:w-1/3 title pt-8">
-               <span className="rounded-full title-span border border-gray-400 px-6 GolosText uppercase font-bold">
+               <span className="rounded-full title-span border border-gray-400 py-4 px-8 GolosText uppercase font-bold">
                Our Services
                </span>
             </div>
             <div className="w-full lg:w-2/3">
-               <h1 className="CalSans text-4xl md:text-6xl mb-5">Explore our<span className="text-(--prim)"> comprehensive interior design</span>services</h1>
+               <h1 className="CalSans text-4xl md:text-6xl mb-5">Explore our<span className="text-(--prim)"> comprehensive interior design</span> services</h1>
                <div className="text-gray-400 GoloText">We specialize in transforming vision into reality. Explore our portfolio of innovative architectural and interior design projects crafted with precision</div>
             </div>
          </div>

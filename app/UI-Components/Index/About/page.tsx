@@ -38,7 +38,7 @@ export default function About() {
       <div className="px-[8%] lg:px-[12%] py-20 about">
          <div className="flex flex-col lg:flex-row gap-20">
             <div className="w-full lg:w-1/3 title pt-8">
-               <span className="rounded-full title-span border border-gray-400 px-6 GolosText uppercase font-bold">
+               <span className="rounded-full title-span border border-gray-400 py-4 px-8 GolosText uppercase font-bold">
                 About Deluxe
                </span>
             </div>
