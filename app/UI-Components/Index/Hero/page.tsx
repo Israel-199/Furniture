@@ -24,7 +24,7 @@ export default function Hero() {
         <div className="w-full px-[8%] lg:px-[12%] py-10">
             <div className="flex flex-col lg:flex-row gap-5 justify-between items-center">
                 <div className="w-full lg:w-1/2 relative">
-                  <div className="">
+                  <div>
                     <span className="hero-span border border-gray-400 GolosText font-bold px-5 py-2 rounded-full">
                         Discover Your Inspired
                     </span>
