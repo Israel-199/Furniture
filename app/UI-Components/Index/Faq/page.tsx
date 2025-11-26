@@ -19,12 +19,12 @@ const faqData = [
         question: "What Furniture services do you offer?",
         answer: "Our furniture services cover everything"
     },
-     {
+    {
         id: "04",
         question: "What Furniture services do you offer?",
         answer: "Our furniture services cover everything"
     },
-     {
+    {
         id: "05",
         question: "What Furniture services do you offer?",
         answer: "Our furniture services cover everything"
@@ -80,15 +80,15 @@ export default function Faqs() {
                         </div>
                     </div>
                     <div className="w-full lg:w-1/3 pt-5">
-                      <div className="faq-card flex flex-col md:flex-row lg:flex-col md:items-center items-start gap-6">
-                        <Image src={faqBanner} alt="faqbanner" className="rounded-2xl mb-5"/>
-                        <div className="flex flex-col">
-                            <h2 className="capitalize text-3xl CalSans mb-5">
-                                Still Looking For Answers Or Need A Fun Chat
-                            </h2>
-                            <p className="text-gray-400 text-lg GolosText">Our team will giud you through our design process, project specifications and cost estimate.</p>
+                        <div className="faq-card flex flex-col md:flex-row lg:flex-col md:items-center items-start gap-6">
+                            <Image src={faqBanner} alt="faqbanner" className="rounded-2xl mb-5" />
+                            <div className="flex flex-col">
+                                <h2 className="capitalize text-3xl CalSans mb-5">
+                                    Still Looking For Answers Or Need A Fun Chat
+                                </h2>
+                                <p className="text-gray-400 text-lg GolosText">Our team will giud you through our design process, project specifications and cost estimate.</p>
+                            </div>
                         </div>
-                      </div>
                     </div>
                 </div>
             </div>
