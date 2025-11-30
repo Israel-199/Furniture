@@ -4,7 +4,7 @@ import Link from "next/link";
 export default function Footer() {
   return (
     <>
-      <div className="px-[8%] lg:px-[12%] py-20 mb-0 footer relative">
+      <div className="px-[8%] lg:px-[12%] py-20 pb-0 footer relative">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 pb-15">
           <div className="footer-content">
             <Link href="/" className="text-3xl lg:text-5xl font-bold Audiowide text-white">
@@ -34,7 +34,7 @@ export default function Footer() {
             </ul>
           </div>
           <div className="footer-content py-3 flex flex-col">
-            <h2 className="text-3xl text-(--prim) underline CalSans mb-3">+(251) 946-002-612</h2>
+            <h2 className="text-3xl text-(--prim) underline CalSans mb-3">+(251) 913-892-612</h2>
             <h4 className="text-2xl text-gray-300 GolosText">Deluxe@gmail.com</h4>
             <div className="footer-social flex gap-3 py-6 cursor-pointer">
               <p className="text-gray-300 GolosText transition-all duration-300 hover:text-(--prim) font-semibold hover:-translate-y-1">Facebook</p>

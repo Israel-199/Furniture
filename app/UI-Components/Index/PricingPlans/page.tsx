@@ -42,7 +42,7 @@ export default function PricingPlan() {
                </span>
             </div>
             <div className="w-full lg:w-2/3">
-               <h1 className="CalSans text-5xl md:text-6xl mb-5 w-full lg:w-[60%]">Design your<span className="text-(--prim)"> space, know</span>services</h1>
+               <h1 className="CalSans text-5xl md:text-6xl mb-5 w-full lg:w-[60%]">Design your<span className="text-(--prim)"> space, know </span>services</h1>
             </div>
          </div>
          <div className="flex flex-col lg:flex-row gap-5 h-full mt-10">

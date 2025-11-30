@@ -431,3 +431,73 @@ border-radius:50%;
   background-color:#000000d0;
   z-index: -1;
 }
+
+.section-bg{
+  height: 500px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(../public/page-bg.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  z-index: 1;
+}
+
+.section-bg::after{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.6);
+  z-index: -1;
+}
+
+.service-wrap{
+  width: 100%;
+  height: 500px;
+  position: relative;
+  z-index: 1;
+}
+
+.service-wrap::after{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, #000000d7, #00000050);
+  z-index: -1;
+}
+
+.service-wrap::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 70%;
+  height: 100%;
+  background: linear-gradient(120deg,rgba(255,255,255,0)0%,rgba(255,255,255,0.1)40%,rgba(255,255,255,0.6)50%,rgba(255,255,255,0.2)60%,rgba(255,255,255,0)100%);
+  z-index: -1;
+}
+
+.service-wrap:before{
+animation: shineSweep 0.6s ease-out forwards;
+}
+
+@keyframes shineSweep {
+  0% {
+    left: -100%;
+  }
+
+  100% {
+    left: 120%;
+  }
+}
+
+
