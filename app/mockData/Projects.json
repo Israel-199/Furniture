@@ -1,0 +1,34 @@
+[
+   {
+    "id":1,
+    "image":"/Project-1.jpg",
+    "tags":["Residential"],
+    "title":"Industrial elegance condo",
+    "location":"New York",
+    "date":"14/01/2025"
+   },
+   {
+    "id":2,
+    "image":"/Project-2.jpg",
+    "tags":["Residential"],
+    "title":"Industrial elegance condo",
+    "location":"Los Angeles",
+    "date":"05/02/2025"
+   },
+   {
+    "id":3,
+    "image":"/Project-3.jpg",
+    "tags":["Residential"],
+    "title":"Industrial elegance condo",
+    "location":"Los Angeles",
+    "date":"07/04/2025"
+   },
+   {
+    "id":4,
+    "image":"/Project-4.jpg",
+    "tags":["Residential"],
+    "title":"Industrial elegance condo",
+    "location":"Los Angeles",
+    "date":"05/02/2025"
+   } 
+]
