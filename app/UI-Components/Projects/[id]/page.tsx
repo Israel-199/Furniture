@@ -8,37 +8,37 @@ import Image from 'next/image';
 import { title } from 'process';
 import CountUp from 'react-countup';
 
-const Gallerys = [Gallery1,Gallery2,Gallery3,Gallery4,Gallery5,Gallery6]
+const Gallerys = [Gallery1, Gallery2, Gallery3, Gallery4, Gallery5, Gallery6]
 
 const DetailsInfo = [
     {
-        id:1,
-        title:"Open living Spaces:",
-        pere:"Creating open-plan living"
+        id: 1,
+        title: "Open living Spaces:",
+        pere: "Creating open-plan living"
     },
     {
-        id:2,
-        title:"Open living Spaces:",
-        pere:"Creating open-plan living"
+        id: 2,
+        title: "Open living Spaces:",
+        pere: "Creating open-plan living"
     },
     {
-        id:3,
-        title:"Open living Spaces:",
-        pere:"Creating open-plan living"
+        id: 3,
+        title: "Open living Spaces:",
+        pere: "Creating open-plan living"
     },
     {
-        id:4,
-        title:"Open living Spaces:",
-        pere:"Creating open-plan living"
+        id: 4,
+        title: "Open living Spaces:",
+        pere: "Creating open-plan living"
     },
     {
-        id:5,
-        title:"Open living Spaces:",
-        pere:"Creating open-plan living"
+        id: 5,
+        title: "Open living Spaces:",
+        pere: "Creating open-plan living"
     },
 ]
 
-import {Swiper,SwiperSlide} from 'swiper/react';
+import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import { Autoplay } from 'swiper/modules';
 import Gallery1 from "@/public/gallery-1.jpg";
@@ -51,161 +51,161 @@ import Gallery6 from "@/public/gallery-6.jpg";
 
 export default function ProjectDetails() {
 
-    const {id} = useParams();
+    const { id } = useParams();
 
-    const project = ProjectsData.find((p)=>p.id === Number(id));
+    const project = ProjectsData.find((p) => p.id === Number(id));
 
-    if (!project){
+    if (!project) {
         return (
             <div className='section-bg text-white flex flex-col'>
                 <h1 className='text-5xl md:text-6xl GolosText mt-15'>Projects Not Found!</h1>
                 <div className='flex items-center gap-5 mt-3'>
                     <Link href={"/UI-Components/Projects"} className='hover:text-(--prim) text-xl transition-all duration-300 mt-5 border border-gray-300 px-4 py-2 rounded hover:bg-white'>
-                       Back To Projects
+                        Back To Projects
                     </Link>
                 </div>
             </div>
         )
     }
-  return (
-   <>
-    <div className="section-bg text-white flex flex-col">
-       <h1 className="text-6xl md:text-8xl GolosText mt-15">Projects</h1>
-       <div className="flex items-center text-xl mt-3">
-          <Link href={"/"} className="hover:text-(--prim) transition-all duration-300">Home</Link>
-          <i className="ri-arrow-right-wide-fill mt-1"/>
-                 <Link href={"/UI-Components/Projects"} className="hover:text-(--prim) transition-all duration-300">Projects</Link>
-          <h2 className="GolosText"></h2>
-         <i className="ri-arrow-right-wide-fill mt-1"/>
-         <h2 className="GolosText text-white">{project.title}</h2>
-       </div>
-    </div>
+    return (
+        <>
+            <div className="section-bg text-white flex flex-col">
+                <h1 className="text-6xl md:text-8xl GolosText mt-15">Projects</h1>
+                <div className="flex items-center text-xl mt-3">
+                    <Link href={"/"} className="hover:text-(--prim) transition-all duration-300">Home</Link>
+                    <i className="ri-arrow-right-wide-fill mt-1" />
+                    <Link href={"/UI-Components/Projects"} className="hover:text-(--prim) transition-all duration-300">Projects</Link>
+                    <h2 className="GolosText"></h2>
+                    <i className="ri-arrow-right-wide-fill mt-1" />
+                    <h2 className="GolosText text-white">{project.title}</h2>
+                </div>
+            </div>
 
-    <div className="px-[8%] lg:px-[12%] py-20">
-        <h2 className='CalSans text-5xl md:text-7xl'>{project.title}</h2>
-        <div className='mt-10 border-b border-gray-300 pb-5 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-5'>
-            <div className="flex flex-col items-start">
-                <h2 className='CalSans text-gray-400 tracking-wider'>Architect:</h2>
-                <h3 className='GolosText text-xl'>Themelexus</h3>
-            </div>
-            <div className="flex flex-col items-start">
-                <h2 className='CalSans text-gray-400 tracking-wider'>Project Type:</h2>
-                <h3 className='GolosText text-xl flex flex-wrap'>
-                    {project.tags.map((tag,idx)=>(
-                        <div key={idx} className='flex'>
-                            {tag}
-                        </div>
-                    ))}
-                </h3>
-                </div>
-                <div className="flex flex-col items-start">
-                <h2 className='CalSans text-gray-400 tracking-wider'>Client:</h2>
-                <h3 className='GolosText text-xl'>David Oswald</h3>
-            </div>
-             <div className="flex flex-col items-start">
-                <h2 className='CalSans text-gray-400 tracking-wider'>Terms:</h2>
-                <h3 className='GolosText text-xl'>6 Month</h3>
-            </div>
-            <div className="flex flex-col items-start">
-                <h2 className='CalSans text-gray-400 tracking-wider'>Strategy:</h2>
-                <h3 className='GolosText text-xl'>Minimalistic</h3>
-            </div>
-             <div className="flex flex-col items-start">
-                <h2 className='CalSans text-gray-400 tracking-wider'>Date:</h2>
-                <h3 className='GolosText text-xl'>{project.date}</h3>
-            </div>
-        </div>
-        <div className='project-det-img mt-10 w-full h-[500px] md:h-[700px] rounded-2xl overflow-hidden'>
-            <Image src={project.image} alt={project.title} width={800} height={400} className="w-full h-full object-cover"/>
-        </div>
-        <div className='mt-10'>
-            <h2 className='CalSans text-5xl md:text-7xl'>Design in Details</h2>
-            <p className='text-gray-500 GolosText mt-5'>consider the physical,mental,and emaotional needs of the people, interior designers use human-centered approchesto address how we live today.</p>
-            <div className='mt-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-2 md:gap-5'>
-                {DetailsInfo.map((info,index)=>(
-                    <div key={index} className='flex gap-2'>
-                        <i className="bi bi-check-circle-fill text-(--prim)"></i>
-                        <p className='GolosText text-gray-500'><span className='font-bold text-black'> {info.title}</span>{info.pere}</p>
+            <div className="px-[8%] lg:px-[12%] py-20">
+                <h2 className='CalSans text-5xl md:text-7xl'>{project.title}</h2>
+                <div className='mt-10 border-b border-gray-300 pb-5 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-5'>
+                    <div className="flex flex-col items-start">
+                        <h2 className='CalSans text-gray-400 tracking-wider'>Architect:</h2>
+                        <h3 className='GolosText text-xl'>Themelexus</h3>
                     </div>
-                ))}
-            </div>
-        </div>
-        <div className="mt-10 border border-gray-200 rounded-md grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
-            <div className="pt-10 border border-gray-200 flex flex-col justify-center items-center">
-                <h2 className="text-5xl tracking-wider GolosText font-bold">
-                    (
-                        <CountUp
-                        start={0}
-                        end={30}
-                        duration={8}
-                        enableScrollSpy
-                        />
-                    M2)
-                </h2>
-                <h2 className='GolosText text-xl mt-2'>BedRoom</h2>
-            </div>
-             <div className="pt-10 border border-gray-200 flex flex-col justify-center items-center">
-                <h2 className="text-5xl tracking-wider GolosText font-bold">
-                    (
-                        <CountUp
-                        start={0}
-                        end={22}
-                        duration={8}
-                        enableScrollSpy
-                        />
-                    M2)
-                </h2>
-                <h2 className='GolosText text-xl mt-2'>BathRoom</h2>
+                    <div className="flex flex-col items-start">
+                        <h2 className='CalSans text-gray-400 tracking-wider'>Project Type:</h2>
+                        <h3 className='GolosText text-xl flex flex-wrap'>
+                            {project.tags.map((tag, idx) => (
+                                <div key={idx} className='flex'>
+                                    {tag}
+                                </div>
+                            ))}
+                        </h3>
+                    </div>
+                    <div className="flex flex-col items-start">
+                        <h2 className='CalSans text-gray-400 tracking-wider'>Client:</h2>
+                        <h3 className='GolosText text-xl'>David Oswald</h3>
+                    </div>
+                    <div className="flex flex-col items-start">
+                        <h2 className='CalSans text-gray-400 tracking-wider'>Terms:</h2>
+                        <h3 className='GolosText text-xl'>6 Month</h3>
+                    </div>
+                    <div className="flex flex-col items-start">
+                        <h2 className='CalSans text-gray-400 tracking-wider'>Strategy:</h2>
+                        <h3 className='GolosText text-xl'>Minimalistic</h3>
+                    </div>
+                    <div className="flex flex-col items-start">
+                        <h2 className='CalSans text-gray-400 tracking-wider'>Date:</h2>
+                        <h3 className='GolosText text-xl'>{project.date}</h3>
+                    </div>
                 </div>
-        <div className="pt-10 border border-gray-200 flex flex-col justify-center items-center">
-                <h2 className="text-5xl tracking-wider GolosText font-bold">
-                    (
-                        <CountUp
-                        start={0}
-                        end={29}
-                        duration={8}
-                        enableScrollSpy
-                        />
-                    M2)
-                </h2>
-                <h2 className='GolosText text-xl mt-2'>Strategy</h2>
+                <div className='project-det-img mt-10 w-full h-[500px] md:h-[700px] rounded-2xl overflow-hidden'>
+                    <Image src={project.image} alt={project.title} width={800} height={400} className="w-full h-full object-cover" />
+                </div>
+                <div className='mt-10'>
+                    <h2 className='CalSans text-5xl md:text-7xl'>Design in Details</h2>
+                    <p className='text-gray-500 GolosText mt-5'>consider the physical,mental,and emaotional needs of the people, interior designers use human-centered approchesto address how we live today.</p>
+                    <div className='mt-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-2 md:gap-5'>
+                        {DetailsInfo.map((info, index) => (
+                            <div key={index} className='flex gap-2'>
+                                <i className="bi bi-check-circle-fill text-(--prim)"></i>
+                                <p className='GolosText text-gray-500'><span className='font-bold text-black'> {info.title}</span>{info.pere}</p>
+                            </div>
+                        ))}
+                    </div>
+                </div>
+                <div className="mt-10 border border-gray-200 rounded-md grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
+                    <div className="pt-10 border border-gray-200 flex flex-col justify-center items-center">
+                        <h2 className="text-5xl tracking-wider GolosText font-bold">
+                            (
+                            <CountUp
+                                start={0}
+                                end={30}
+                                duration={8}
+                                enableScrollSpy
+                            />
+                            M2)
+                        </h2>
+                        <h2 className='GolosText text-xl mt-2'>BedRoom</h2>
+                    </div>
+                    <div className="pt-10 border border-gray-200 flex flex-col justify-center items-center">
+                        <h2 className="text-5xl tracking-wider GolosText font-bold">
+                            (
+                            <CountUp
+                                start={0}
+                                end={22}
+                                duration={8}
+                                enableScrollSpy
+                            />
+                            M2)
+                        </h2>
+                        <h2 className='GolosText text-xl mt-2'>BathRoom</h2>
+                    </div>
+                    <div className="pt-10 border border-gray-200 flex flex-col justify-center items-center">
+                        <h2 className="text-5xl tracking-wider GolosText font-bold">
+                            (
+                            <CountUp
+                                start={0}
+                                end={29}
+                                duration={8}
+                                enableScrollSpy
+                            />
+                            M2)
+                        </h2>
+                        <h2 className='GolosText text-xl mt-2'>Strategy</h2>
+                    </div>
+                    <div className="pt-10 border border-gray-200 flex flex-col justify-center items-center">
+                        <h2 className="text-5xl tracking-wider GolosText font-bold">
+                            (
+                            <CountUp
+                                start={0}
+                                end={12}
+                                duration={8}
+                                enableScrollSpy
+                            />
+                            M2)
+                        </h2>
+                        <h2 className='GolosText text-xl mt-2'>Kitchen Area</h2>
+                    </div>
+                </div>
+                <div className="mt-10">
+                    <h2 className="CalSans text-5xl md:text-7xl">Incredible Result</h2>
+                    <p className='text-gray-500 GolosText mt-5'>establishing multi-sensor experience, we can design that resonate acros age and demographics.</p>
+                </div>
             </div>
-             <div className="pt-10 border border-gray-200 flex flex-col justify-center items-center">
-                <h2 className="text-5xl tracking-wider GolosText font-bold">
-                    (
-                        <CountUp
-                        start={0}
-                        end={12}
-                        duration={8}
-                        enableScrollSpy
-                        />
-                    M2)
-                </h2>
-                <h2 className='GolosText text-xl mt-2'>Kitchen Area</h2>
+            <div className="project-gallery">
+                <Swiper slidesPerView={2} spaceBetween={0} loop={true} autoplay={{ delay: 1500, }} modules={[Autoplay]} speed={1800} breakpoints={{ 1200: { slidesPerView: 2 }, 575: { slidesPerView: 1 }, 0: { slidesPerView: 1 } }}>
+                    {Gallerys.map((gallery, index) => (
+                        <SwiperSlide key={index}>
+                            <Image src={gallery} alt={`Galleryss-Img-${index}`} className='w-full h-[600px] object-cover' />
+                        </SwiperSlide>
+                    ))}
+                </Swiper>
             </div>
-             </div>
-            <div className="mt-10">
-                <h2 className="CalSans text-5xl md:text-7xl">Incredible Result</h2>
-                <p className='text-gray-500 GolosText mt-5'>establishing multi-sensor experience, we can design that resonate acros age and demographics.</p>
+            <div className='px-[8%] lg:px-[12%] py-20 about'>
+                <div className='flex flex-col lg:flex-row gap-10'>
+                    <div className='w-full lg:w-1/3 title pt-8'>
+                        <span className='rounded-full title-span border border-gray-400 px-6 py-2 GolosText uppercase font-bold'>Related Projects</span>
+                    </div>
+                </div>
             </div>
-    </div>
-    <div className="project-gallery">
-        <Swiper slidesPerView={2} spaceBetween={0} loop={true} autoplay={{ delay: 1500, }} modules={[Autoplay]} speed={1800} breakpoints={{1200:{slidesPerView:2},575:{slidesPerView:1},0:{slidesPerView:1}}}>
-             {Gallerys.map((gallery, index) => (
-                <SwiperSlide key={index}>
-                    <Image src={gallery} alt={`Galleryss-Img-${index}`} className='w-full h-[600px] object-cover'/>
-                    </SwiperSlide>
-                ))}
-        </Swiper>
-    </div>
-  <div className='px-[8%] lg:px-[12%] py-20 about'>
-     <div className='flex flex-col lg:flex-row gap-10'>
-        <div className='w-full lg:w-1/3 title pt-8'>
-           <span className='rounded-full title-span border border-gray-400 px-6 py-2 GolosText uppercase font-bold'>Related Projects</span>
-        </div>
-     </div>
-  </div>
-   </>
-  )
+        </>
+    )
 }
 
