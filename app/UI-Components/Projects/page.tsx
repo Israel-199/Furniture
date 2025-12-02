@@ -13,7 +13,6 @@ export default function Projects() {
           <h2 className="GolosText">Projects</h2>
         </div>
       </div>
-
       <div className="px-[8%] lg:px-[12%] py-30">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
           {ProjectsData.map((project, index) => (
