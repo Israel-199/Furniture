@@ -23,7 +23,7 @@ export default function Blogs() {
                     <div className="w-full lg:w-1/2">
                         {BlogData.slice(0, 1).map((blog, index) => (
                             <div key={index} className="group cursor-pointer">
-                                <Link href={`/app/UI-Components/Blogs/${blog.id}`}>
+                                <Link href={`/UI-Components/Blogs/${blog.id}`}>
                                     <div className="blog-image relative rounded-2xl overflow-hidden">
                                         <Image src={blog.image} alt={blog.title} width={500} height={500} className="w-full h-full rounded-2xl group-hover:scale-110 transition-all duration-300" />
                                         <span className="absolute top-5 left-5 bg-(--prim) px-4 py-1 font-semibold rounded-full text-white GolosText">{blog.tag}</span>
@@ -40,7 +40,7 @@ export default function Blogs() {
                     <div className="w-full lg:w-1/2">
                         {BlogData.slice(0, 3).map((blog, index) => (
                             <div key={index} className="group cursor-pointer">
-                                <Link href={`/app/UI-Components/Blogs/${blog.id}`}>
+                                <Link href={`/UI-Components/Blogs/${blog.id}`}>
                                     <div className="flex flex-col md:flex-row group cursor-pointer mb-5 gap-4">
                                         <div className="w-full lg:w-1/2 blog-image relative rounded-2xl overflow-hidden">
                                             <Image src={blog.image} alt={blog.title} width={200} height={200} className="w-full h-full rounded-2xl group-hover:scale-110 transition-all duration-300" />

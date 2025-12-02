@@ -28,5 +28,35 @@
          "date":"June 2 , 2025",
          "title":"Functional Design Trends that Blend style and comfort",
          "desc":"Moder design is all creating a sleek"
+    },
+     {
+        "id" :"4" ,
+        "image":"/blog-4.jpg",
+         "imageDet":"/blog-4.jpg",
+         "tag":"Power Tool",
+         "postby":"Admin",
+         "date":"June 2 , 2025",
+         "title":"Functional Design Trends that Blend style and comfort",
+         "desc":"Moder design is all creating a sleek"
+    },
+     {
+        "id" :"5" ,
+        "image":"/blog-5.jpg",
+         "imageDet":"/blog-5.jpg",
+         "tag":"Power Tool",
+         "postby":"Admin",
+         "date":"June 2 , 2025",
+         "title":"Functional Design Trends that Blend style and comfort",
+         "desc":"Moder design is all creating a sleek"
+    },
+     {
+        "id" :"6" ,
+        "image":"/blog-6.jpg",
+         "imageDet":"/blog-6.jpg",
+         "tag":"Power Tool",
+         "postby":"Admin",
+         "date":"June 2 , 2025",
+         "title":"Functional Design Trends that Blend style and comfort",
+         "desc":"Moder design is all creating a sleek"
     }
 ]
