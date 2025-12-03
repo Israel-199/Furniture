@@ -1,0 +1,56 @@
+[
+    {
+        "id": "1",
+        "image": "/team-1.jpg",
+        "name": "John Doe",
+        "role": "Chief Executive Officer",
+        "exp": "10 Years Experience",
+        "number": "+123 456 7890",
+        "desc": "john doe was selected to judge the 3rd edition od dozen awards. having many years of expertise in the design of residential and public spaces - the founder and chief architect of antra and author of expertise in the design of residenial"
+    },
+     {
+        "id": "2",
+        "image": "/team-2.jpg",
+        "name": "Jane Smith",
+        "role": "Chief Operating Officer",
+        "exp": "8 Years Experience",
+        "number": "+123 456 7891",
+        "desc": "john doe was selected to judge the 3rd edition od dozen awards. having many years of expertise in the design of residential and public spaces - the founder and chief architect of antra and author of expertise in the design of residenial"
+    },
+     {
+        "id": "3",
+        "image": "/team-3.jpg",
+        "name": "Michael Johnson",
+        "role": "Chief Financial Officer",
+        "exp": "10 Years Experience",
+        "number": "+123 456 7890",
+        "desc": "john doe was selected to judge the 3rd edition od dozen awards. having many years of expertise in the design of residential and public spaces - the founder and chief architect of antra and author of expertise in the design of residenial"
+    },
+     {
+        "id": "4",
+        "image": "/team-4.jpg",
+        "name": "Emily Davis",
+        "role": "Chief Marketing Officer",
+        "exp": "7 Years Experience",
+        "number": "+123 456 7892",
+        "desc": "john doe was selected to judge the 3rd edition od dozen awards. having many years of expertise in the design of residential and public spaces - the founder and chief architect of antra and author of expertise in the design of residenial"
+    },
+    {
+        "id":"5",
+        "image": "/team-5.jpg",
+        "name": "David Wilson",
+        "role": "Chief Technology Officer",
+        "exp": "9 Years Experience",
+        "number": "+123 456 7893",
+        "desc": "david was selected to judge the 3rd edition od dozen awards"
+    },
+    {
+        "id":"6",
+        "image": "/team-6.jpg",
+        "name": "Sophia Martinez",
+        "role": "Chief Design Officer",
+        "exp": "6 Years Experience",
+        "number": "+123 456 7894",
+        "desc": "sophia was selected to judge the 3rd edition od dozen awards"
+    }
+]
