@@ -39,7 +39,7 @@ export default function Testimonial() {
                                 </span>
                             </div>
                             <div className="w-full lg:w-1.2">
-                                <h1 className="CalSans text-5xl md:text-7xl">Here's What<span className="text-(--prim)"> warm words our clients</span>Say</h1>
+                                <h1 className="CalSans text-5xl md:text-7xl">Here's What<span className="text-(--prim)"> warm words our clients </span>Say</h1>
                             </div>
                         </div>
                         <div className="flex flex-col md:flex-row items-start md:items-center gap-5 mt-5">
