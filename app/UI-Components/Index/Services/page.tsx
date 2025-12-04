@@ -17,17 +17,26 @@ export default function Services() {
                         </span>
                     </div>
                     <div className="w-full lg:w-2/3">
-                        <h1 className="CalSans text-4xl md:text-6xl mb-5">Explore our<span className="text-(--prim)"> comprehensive interior design</span> services</h1>
-                        <div className="text-gray-400 GoloText">We specialize in transforming vision into reality. Explore our portfolio of innovative architectural and interior design projects crafted with precision</div>
+                        <h1 className="CalSans text-4xl md:text-6xl mb-5">
+                            Explore our <span className="text-(--prim)">premium furniture collections</span> and services
+                        </h1>
+
+                        <div className="text-gray-400 GoloText">
+                            We craft high-quality furniture designed to elevate your lifestyle. Browse our range of modern, elegant, and durable pieces created with precision and craftsmanship.
+                        </div>
+
                     </div>
                 </div>
                 <div className="service-card border-b border-gray-400 cursor-pointer py-2 flex flex-col md:flex-row justify-between items-start md:items-center gap-5 mt-4">
                     <div className="flex flex-col md:flex-row w-full md:w-[70%] gap-2 md:gap-8">
                         <h4 className="text-4xl CalSans font-bold">01</h4>
                         <div className="service-content">
-                            <h2 className="mb-3 text-4xl CalSans">Residential Interior Design</h2>
-                            <p className="GolosText text-gray-400">Tailored design service for private homes, including stylesh room makeovers,complete</p>
+                            <h2 className="mb-3 text-4xl CalSans">Living Room Furniture</h2>
+                            <p className="GolosText text-gray-400">
+                                Stylish and durable living room pieces, including sofas, coffee tables, TV stands, and complete setup solutions tailored for modern homes.
+                            </p>
                         </div>
+
                     </div>
                     <div className="overflow-hidden h-full md:h-[210%] w-full md:w-[300px]">
                         <Image src={service1} alt="service-image" className="w-full service-img object-cover rounded-2xl border-2 border-black" />
@@ -38,9 +47,12 @@ export default function Services() {
                     <div className="flex flex-col md:flex-row w-full md:w-[70%] gap-2 md:gap-8">
                         <h4 className="text-4xl CalSans font-bold">02</h4>
                         <div className="service-content">
-                            <h2 className="mb-3 text-4xl CalSans">Commercial Interior Design</h2>
-                            <p className="GolosText text-gray-400">Design functional service service for private homes, including offices, retail spaces, and hopitality venuesmakeovers,complete</p>
+                            <h2 className="mb-3 text-4xl CalSans">Bedroom Furniture Collections</h2>
+                            <p className="GolosText text-gray-400">
+                                Premium bedroom sets designed for comfort and elegance — beds, wardrobes, bedside tables, and storage solutions crafted with precision.
+                            </p>
                         </div>
+
                     </div>
                     <div className="overflow-hidden h-full md:h-[210%] w-full md:w-[300px]">
                         <Image src={service2} alt="service-image" className="w-full service-img object-cover rounded-2xl border-2 border-black" />
@@ -51,9 +63,12 @@ export default function Services() {
                     <div className="flex flex-col md:flex-row w-full md:w-[70%] gap-2 md:gap-8">
                         <h4 className="text-4xl CalSans font-bold">03</h4>
                         <div className="service-content">
-                            <h2 className="mb-3 text-4xl CalSans">Interior Design Consultation</h2>
-                            <p className="GolosText text-gray-400">Providing professional advice on concepts,colors ...</p>
+                            <h2 className="mb-3 text-4xl CalSans">Custom Furniture Design</h2>
+                            <p className="GolosText text-gray-400">
+                                Personalized furniture crafted to match your taste — from concept selection to material choice, finishes, sizing, and functional detailing.
+                            </p>
                         </div>
+
                     </div>
                     <div className="overflow-hidden h-full md:h-[210%] w-full md:w-[300px]">
                         <Image src={service3} alt="service-image" className="w-full service-img object-cover rounded-2xl border-2 border-black" />
@@ -64,9 +79,12 @@ export default function Services() {
                     <div className="flex flex-col md:flex-row w-full md:w-[70%] gap-2 md:gap-8">
                         <h4 className="text-4xl CalSans font-bold">04</h4>
                         <div className="service-content">
-                            <h2 className="mb-3 text-4xl CalSans">Outdoor & Landscape Design</h2>
-                            <p className="GolosText text-gray-400">Extending design service to outdoor private homes, including stylesh room makeovers,complete</p>
+                            <h2 className="mb-3 text-4xl CalSans">Outdoor & Patio Furniture</h2>
+                            <p className="GolosText text-gray-400">
+                                High-quality outdoor furniture including patio chairs, tables, loungers, and durable weather-resistant sets designed for stylish outdoor living.
+                            </p>
                         </div>
+
                     </div>
                     <div className="overflow-hidden h-full md:h-[210%] w-full md:w-[300px]">
                         <Image src={service4} alt="service-image" className="w-full service-img object-cover rounded-2xl border-2 border-black" />

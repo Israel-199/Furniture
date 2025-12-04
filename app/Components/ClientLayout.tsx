@@ -1,5 +1,4 @@
 "use client";
-
 import { usePathname } from "next/navigation";
 import Navbar from "./Navbar/navbar";
 import Footer from "./Footer/Footer";
@@ -12,7 +11,7 @@ export default function ClientLayout({
 
     const pathname = usePathname();
 
-    const hideLayout = pathname === "/app/UI-Components/Pages/Page404";
+    const hideLayout = pathname === "/UI-Components/Pages/Page404";
     return (
         <>
             {!hideLayout && <Navbar />}

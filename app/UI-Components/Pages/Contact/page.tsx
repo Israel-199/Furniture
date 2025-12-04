@@ -27,17 +27,20 @@ export default function Contact() {
             </div>
         </div>
         <div className="w-full lg:w-1/2 mt-20">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
-                <div>
-                  <h2 className="text-gray-400 CalSans tracking-wider">Address:</h2>
-                  <p className="GolosText text-xl mt-5">5609 E Sprague Ave, Spokane Valley, WA 99212, USA</p>
-                </div>
-                <div>
-                  <h2 className="text-gray-400 CalSans mb-5 tracking-wider">Support</h2>
-                  <span className="text-(--prim) font-bold">+(91) 123 456 7980</span>
-                  <p className="GolosText text-2xl font-bold">deluxe@12.com</p>
-                </div>
-            </div>
+           <div className="grid grid-cols-1 md:grid-cols-2 gap-5"> 
+  <div>
+    <h2 className="text-gray-400 CalSans tracking-wider">Address:</h2>
+    <p className="GolosText text-xl mt-5">
+      Behind Mega Building, Meskel Flower Road, next to Mulushewa Butchery, Addis Ababa, Ethiopia
+    </p>
+  </div>
+  <div>
+    <h2 className="text-gray-400 CalSans mb-5 tracking-wider">Support</h2>
+    <span className="text-(--prim) font-bold">+251-115-580406 / 08 / 12</span>
+    <p className="GolosText text-2xl font-bold">info@deluxefurniture.et</p>
+  </div>
+</div>
+
         </div>
         <div className="mt-10">
            <div className="flex justify-between items-center flex-col lg:flex-row gap-15">
@@ -86,7 +89,20 @@ export default function Contact() {
         </div>
       </div>
       <div className="contact-map h-[600px]">
-        <iframe className="w-full rounded-2xl brightnesss-100 grayscale" src="" width="100%" height="100%" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+    <iframe
+  loading="lazy"
+  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3941.116250208976!2d38.71253091433608!3d8.961434692512084!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x164b81bcd0811669%3A0xf7129967b9ed8b79!2sAll%20Mart%20Jemo%20Branch!5e0!3m2!1sen!2set!4v1599234300426!5m2!1sen!2set"
+  width="100%"
+  height="595"
+  style={{ border: 0 }}
+  
+  referrerPolicy="no-referrer-when-downgrade"
+  className="w-full rounded-2xl"
+/>
+
+
+
+
       </div>
     </>
   )

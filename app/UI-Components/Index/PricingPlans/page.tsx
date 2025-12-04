@@ -4,32 +4,33 @@ import { desc } from "framer-motion/client";
 
 const PricingPlanData = [
     {
-        id:"1",
-        plan:"Basic Plan",
-        desc:"Our Foundation plan offers essential at an affordable price,",
-        price:"1200ETB",
-        planInfo:[
-            "Individuals & small projects",
-            "Access to design features",
-            "Limited library of decoration item",
+        id: "1",
+        plan: "Basic Plan",
+        desc: "Perfect for individuals looking for essential furniture design guidance at a budget-friendly rate.",
+        price: "3,500 ETB",
+        planInfo: [
+            "Suitable for single-room projects",
+            "Access to basic design features",
+            "Limited catalog of furniture items",
             "Email support",
             "Monthly updates"
         ]
     },
-     {
-        id:"2",
-        plan:"Premium Plan",
-        desc:"Our Foundation plan offers essential at an affordable price,",
-        price:"1200ETB",
-        planInfo:[
-            "Individuals & small projects",
-            "Access to design features",
-            "Limited library of decoration item",
-            "Email support",
-            "Monthly updates"
+    {
+        id: "2",
+        plan: "Premium Plan",
+        desc: "A complete design and furnishing solution for clients seeking high-quality, detailed service.",
+        price: "7,500 ETB",
+        planInfo: [
+            "Best for full home or multi-room projects",
+            "Access to all design features",
+            "Full furniture & decor library",
+            "Priority email & phone support",
+            "Weekly updates"
         ]
     },
-]
+];
+
 
 export default function PricingPlan() {
   return (
@@ -57,7 +58,7 @@ export default function PricingPlan() {
                    <div key={index} className="pricing-card bg-white shadow p-5 rounded-2xl">
                       <h2 className="GolosText font-semibold text-3xl mb-5">{plan.plan}</h2>
                       <p className="text-gray-500 text-[15px] lg:text-[20px]">{plan.desc}</p>
-                      <h1 className="text-6xl lg:text-7xl mt-5 text-(--prim) CalSans flex border-b border-gray-300 pb-3">{plan.price}<span className="text-xl text-gray-600">/ Per Month</span></h1>
+                      <h1 className="text-5xl lg:text-6xl mt-5 text-(--prim) CalSans flex border-b border-gray-300 pb-3">{plan.price}<span className="text-xl text-gray-600">/ Per Month</span></h1>
                       <div className="flex flex-col gap-2 my-5">
                         {plan.planInfo.map((info)=>(
                             <p className="text-gray-800 font-semibold text-[15px] GolosText">

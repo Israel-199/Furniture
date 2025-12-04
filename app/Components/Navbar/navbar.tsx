@@ -95,7 +95,7 @@ export default function Navbar() {
            <i className="bi bi-telephone-inbound text-2xl px-3 py-2 rounded-full"></i>
            <div className="flex flex-col items-start">
              <p>Call Us Now</p>
-             <h3 className="text-(--prim) GolosText">+251 (923) 040 943</h3>
+             <h3 className="text-(--prim) GolosText">+251-115-580406</h3>
            </div>
         </button>
         <Link href={"/UI-Components/Pages/Contact"}>

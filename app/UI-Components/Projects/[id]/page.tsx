@@ -11,32 +11,33 @@ import CountUp from 'react-countup';
 const Gallerys = [Gallery1, Gallery2, Gallery3, Gallery4, Gallery5, Gallery6]
 
 const DetailsInfo = [
-    {
-        id: 1,
-        title: "Open living Spaces:",
-        pere: "Creating open-plan living"
-    },
-    {
-        id: 2,
-        title: "Open living Spaces:",
-        pere: "Creating open-plan living"
-    },
-    {
-        id: 3,
-        title: "Open living Spaces:",
-        pere: "Creating open-plan living"
-    },
-    {
-        id: 4,
-        title: "Open living Spaces:",
-        pere: "Creating open-plan living"
-    },
-    {
-        id: 5,
-        title: "Open living Spaces:",
-        pere: "Creating open-plan living"
-    },
-]
+{
+id: 1,
+title: "Open Living Spaces:",
+pere: "Creating open-plan living areas that feel spacious, airy, and inviting."
+},
+{
+id: 2,
+title: "Functional Layouts:",
+pere: "Designing furniture arrangements that maximize usability and comfort."
+},
+{
+id: 3,
+title: "Natural Lighting:",
+pere: "Incorporating windows and light sources to enhance ambiance and mood."
+},
+{
+id: 4,
+title: "Elegant Materials:",
+pere: "Using high-quality materials to combine durability with stylish aesthetics."
+},
+{
+id: 5,
+title: "Custom Decor:",
+pere: "Adding personalized touches that reflect your style and personality."
+}
+];
+
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';

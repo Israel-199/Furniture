@@ -36,64 +36,64 @@ const Partners = [partner1,partner2,partner3,partner4,partner5,partner6];
 
 
 const awardsData = [
-    {
-        years:"2025",
-        title:"Best Residential Design",
-        category: "Architecture",
-        image: Award1
-    },
-      {
-        years:"2024",
-        title:"Top Commercial Design",
-        category: "Architecture",
-        image: Award2
-    },
-      {
-        years:"2023",
-        title:"Sustainable Design Award",
-        category: "Community Center",
-        image: Award3
-    },
-     {
-        years:"2022",
-        title:"Sustainable Design Award",
-        category: "Community Center",
-        image: Award4
-    },
-     {
-        years:"2021",
-        title:"Sustainable Design Award",
-        category: "Community Center",
-        image: Award5
-    },
-]
+{
+years: "2025",
+title: "Best Modern Office Furniture",
+category: "Commercial Interiors",
+image: Award1
+},
+{
+years: "2024",
+title: "Top Home Interior Design",
+category: "Residential Interiors",
+image: Award2
+},
+{
+years: "2023",
+title: "Sustainable Furniture Award",
+category: "Eco-Friendly Design",
+image: Award3
+},
+{
+years: "2022",
+title: "Excellence in Cafeteria & Restaurant Furniture",
+category: "Commercial Interiors",
+image: Award4
+},
+{
+years: "2021",
+title: "Innovative Wardrobe & Storage Solutions",
+category: "Furniture Manufacturing",
+image: Award5
+},
+];
 const historyData = [
-    {
-        image : timeline1,
-        year : "2025",
-        text: "Celebrates 15 years with a retrospective showcase",
-    },
-    {
-        image : timeline2,
-        year : "2025",
-        text: "Celebrates 15 years with a retrospective showcase",
-    },
-    {
-        image : timeline3,
-        year : "2025",
-        text: "Celebrates 15 years with a retrospective showcase",
-    },
-    {
-        image : timeline4,
-        year : "2025",
-        text: "Celebrates 15 years with a retrospective showcase",
-    },
-    {
-        image : About2,
-        year : "2025",
-        text: "Celebrates 15 years with a retrospective showcase",
-    }
-]
+{
+image: timeline1,
+year: "1989",
+text: "Deluxe Furniture is founded as a division of MINAYE PLC, starting its journey in Addis Ababa."
+},
+{
+image: timeline2,
+year: "2000",
+text: "Expands product range to include office and cafeteria furniture, gaining market recognition."
+},
+{
+image: timeline3,
+year: "2010",
+text: "Opens first showroom outside the city center and starts manufacturing kitchen cabinets and wardrobes."
+},
+{
+image: timeline4,
+year: "2018",
+text: "Reaches 6,600 m² of showroom space across multiple branches in Addis Ababa and Hawassa."
+},
+{
+image: About2,
+year: "2025",
+text: "Celebrates over 35 years of excellence with plans to expand into other major cities."
+}
+];
 export default function About() {
 
     const [hoveredIndex, sethoveredIndex] = useState(0);
@@ -114,7 +114,7 @@ export default function About() {
                         <span className="rounded-full title-span border border-gray-400 py-4 px-8 GolosText uppercase font-bold">
                             Started In 1989
                         </span>
-                        <h1 className="CalSans pt-8 text-4xl md:text-5xl w-full lg:w-[80%]v mb-5">We Shape<span className="text-(--prim)"> Interior Design, Crafting</span>Timeless and Inspiring Spaces</h1>
+                        <h1 className="CalSans pt-8 text-4xl md:text-5xl w-full lg:w-[80%]v mb-5">We Shape<span className="text-(--prim)"> Interior Design, Crafting </span>Timeless and Inspiring Spaces</h1>
                         <div className="about-content md:pt-15">
                             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-5">
                                 <div className="about-text">

@@ -200,18 +200,6 @@ body {
   color:gray;
 }
 
-.service:before{
-  content:'';
-  position: absolute;
-  background-image: url(../public/service-bg.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  bottom: -13%;
-  right: 10%;
-  height: 450px;
-  width: 800px;
-}
 .service-img{
   transform: scale(0);
   opacity: 0;

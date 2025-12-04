@@ -9,21 +9,22 @@ import test1 from "@/public/team-1.jpg";
 import test2 from "@/public/testimonials-1.jpg";
 
 const TestimonialData = [
-    {
-        id:"1",
-        desc:"A wonderfull experience! They knew what they were doing",
-        image:test1,
-        name:"Deluxe",
-        role:"Co-founder",
-    },
-    {
-        id:"2",
-        desc:"A wonderfull experience! They knew what they were doing",
-        image:test2,
-        name:"Deluxe",
-        role:"Company owner",
-    }
+{
+id: "1",
+desc: "Working with Deluxe Furniture was an exceptional experience! Their expertise and attention to detail are unmatched.",
+image: test1,
+name: "Deluxe Furniture",
+role: "Co-founder",
+},
+{
+id: "2",
+desc: "Deluxe Furniture delivered outstanding service. Their professionalism and dedication truly stand out.",
+image: test2,
+name: "Deluxe Furniture",
+role: "Company Owner",
+}
 ];
+
 
 export default function Testimonial() {
     return (
@@ -39,7 +40,12 @@ export default function Testimonial() {
                                 </span>
                             </div>
                             <div className="w-full lg:w-1.2">
-                                <h1 className="CalSans text-5xl md:text-7xl">Here's What<span className="text-(--prim)"> warm words our clients </span>Say</h1>
+                                <h1 className="CalSans text-5xl md:text-7xl">
+                                    Here's what
+                                    <span className="text-(--prim)"> our happy clients </span>
+                                    say
+                                </h1>
+
                             </div>
                         </div>
                         <div className="flex flex-col md:flex-row items-start md:items-center gap-5 mt-5">
@@ -60,14 +66,14 @@ export default function Testimonial() {
                         </div>
                     </div>
                     <div className="mt-10">
-                        <Swiper slidesPerView={1} spaceBetween={0} loop={true} autoplay={{delay:2000}} modules={[Autoplay]} speed={1500}>
-                            {TestimonialData.map((test,index)=>(
+                        <Swiper slidesPerView={1} spaceBetween={0} loop={true} autoplay={{ delay: 2000 }} modules={[Autoplay]} speed={1500}>
+                            {TestimonialData.map((test, index) => (
                                 <SwiperSlide key={index}>
                                     <p className="GolosText text-2xl font-semibold tracking-wide">
                                         {test.desc}
                                     </p>
                                     <div className="flex items-center gap-3 mt-8">
-                                        <Image src={test.image} alt={test.name} className="rounded-full w-[70px] h-[70px] object-cover"/>
+                                        <Image src={test.image} alt={test.name} className="rounded-full w-[70px] h-[70px] object-cover" />
                                         <div className="flex flex-col">
                                             <h3 className="GolosText text-2xl font-demibold">{test.name}</h3>
                                             <h3 className="font-semibold text-gray-600">{test.role}</h3>

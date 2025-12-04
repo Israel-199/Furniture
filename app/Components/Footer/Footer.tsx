@@ -34,18 +34,60 @@ export default function Footer() {
             </ul>
           </div>
           <div className="footer-content py-3 flex flex-col">
-            <h2 className="text-3xl text-(--prim) underline CalSans mb-3">+(251) 913-892-612</h2>
-            <h4 className="text-2xl text-gray-300 GolosText">Deluxe@gmail.com</h4>
+            <h2 className="text-3xl text-(--prim) underline CalSans mb-3">+251-115-580406</h2>
+            <h4 className="text-2xl text-gray-300 GolosText">info@deluxefurniture.et</h4>
+
+
             <div className="footer-social flex gap-3 py-6 cursor-pointer">
-              <p className="text-gray-300 GolosText transition-all duration-300 hover:text-(--prim) font-semibold hover:-translate-y-1">Facebook</p>
-              <p className="text-gray-300 GolosText transition-all duration-300 hover:text-(--prim) font-semibold hover:-translate-y-1">Instagram</p>
-              <p className="text-gray-300 GolosText transition-all duration-300 hover:text-(--prim) font-semibold hover:-translate-y-1">YouTube</p>
-              <p className="text-gray-300 GolosText transition-all duration-300 hover:text-(--prim) font-semibold hover:-translate-y-1">Twitter</p>
+              <Link
+                href="https://web.facebook.com/deluxefurnitureethiopia#"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-300 GolosText transition-all duration-300 hover:text-(--prim) font-semibold hover:-translate-y-1"
+              >
+                Facebook
+              </Link>
+
+              <Link
+                href="https://www.instagram.com/deluxefurniture_/?hl=en"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-300 GolosText transition-all duration-300 hover:text-(--prim) font-semibold hover:-translate-y-1"
+              >
+                Instagram
+              </Link>
+
+              <Link
+                href="https://www.youtube.com/@deluxefurniture"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-300 GolosText transition-all duration-300 hover:text-(--prim) font-semibold hover:-translate-y-1"
+              >
+                YouTube
+              </Link>
+
+              <Link
+                href="https://twitter.com/deluxefurniture"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-300 GolosText transition-all duration-300 hover:text-(--prim) font-semibold hover:-translate-y-1"
+              >
+                Twitter
+              </Link>
             </div>
+
           </div>
         </div>
         <div className="footer-bottom flex justify-center items-center py-8 border-t border-gray-500">
-          <p className="text-gray-300 text-lg">Copyright 2025. All Rights Reserved By <Link href={"/"} className="transition-all duration-300 text-white text-xl hover:text-(--prim) font-semibold"> deluxe</Link></p>
+          <p className="text-gray-300 text-lg">
+            © 2025. All Rights Reserved By{" "}
+            <Link
+              href={"/"}
+              className="transition-all duration-300 text-white text-xl hover:text-(--prim) font-semibold"
+            >
+              Deluxe Furniture
+            </Link>
+          </p>
         </div>
       </div>
     </>

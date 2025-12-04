@@ -11,43 +11,44 @@ import Newsletter from "../../Index/Newsletter/page";
 
 
 const ServicesData = [
-    {
-        id:"1",
-        images: serviceImg1,
-        title:"Residential Design",
-        desc:"Tailored design services for private homes, including room makeovers and complete home transformations."
-    },
-    {
-        id:"2",
-        images: serviceImg2,
-        title:"Residential Design",
-        desc:"Tailored design services for private homes, including room makeovers and complete home transformations."
-    },
-    {
-        id:"3",
-        images: serviceImg3,
-        title:"Residential Design",
-        desc:"Tailored design services for private homes, including room makeovers and complete home transformations."
-    },
-    {
-        id:"4",
-        images: serviceImg4,
-        title:"Residential Design",
-        desc:"Tailored design services for private homes, including room makeovers and complete home transformations."
-    },
-    {
-        id:"5",
-        images: serviceImg5,
-        title:"Residential Design",
-        desc:"Tailored design services for private homes, including room makeovers and complete home transformations."
-    },
-    {
-        id:"6",
-        images: serviceImg6,
-        title:"Residential Design",
-        desc:"Tailored design services for private homes, including room makeovers and complete home transformations."
-    },
-]
+{
+id: "1",
+images: serviceImg1,
+title: "Residential Design",
+desc: "Tailored design services for private homes, including room makeovers and complete home transformations."
+},
+{
+id: "2",
+images: serviceImg2,
+title: "Office Interiors",
+desc: "Functional and stylish office designs to enhance productivity and create a professional environment."
+},
+{
+id: "3",
+images: serviceImg3,
+title: "Custom Furniture",
+desc: "Bespoke furniture crafted to match your style, space, and functional needs perfectly."
+},
+{
+id: "4",
+images: serviceImg4,
+title: "Outdoor Spaces",
+desc: "Design and furnish patios, gardens, and balconies with comfortable and stylish outdoor furniture."
+},
+{
+id: "5",
+images: serviceImg5,
+title: "Interior Consultation",
+desc: "Expert guidance on furniture layout, color schemes, and decor to elevate your living or work space."
+},
+{
+id: "6",
+images: serviceImg6,
+title: "Home Renovation",
+desc: "Complete home transformation services, from concept design to execution, for a refreshed living experience."
+}
+];
+
 
 export default function Services() {
   return (

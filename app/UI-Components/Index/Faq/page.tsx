@@ -4,32 +4,33 @@ import faqBanner from "@/public/faq-banner.jpg";
 import { useState } from "react";
 
 const faqData = [
-    {
-        id: "01",
-        question: "What Furniture services do you offer?",
-        answer: "Our furniture services cover everything"
-    },
-    {
-        id: "02",
-        question: "What services do you offer?",
-        answer: "Our furniture services cover everything"
-    },
-    {
-        id: "03",
-        question: "What Furniture services do you offer?",
-        answer: "Our furniture services cover everything"
-    },
-    {
-        id: "04",
-        question: "What Furniture services do you offer?",
-        answer: "Our furniture services cover everything"
-    },
-    {
-        id: "05",
-        question: "What Furniture services do you offer?",
-        answer: "Our furniture services cover everything"
-    },
-]
+{
+id: "01",
+question: "What types of furniture do you provide?",
+answer: "We offer a wide range of furniture including living room, bedroom, office, and custom pieces tailored to your style."
+},
+{
+id: "02",
+question: "Do you offer custom furniture designs?",
+answer: "Yes! Our team can design and craft custom furniture to perfectly match your space and preferences."
+},
+{
+id: "03",
+question: "What materials do you use in your furniture?",
+answer: "We use high-quality materials such as solid wood, metal, and premium upholstery to ensure durability and style."
+},
+{
+id: "04",
+question: "Do you provide delivery and installation?",
+answer: "Absolutely! We offer delivery and professional installation services for all our furniture products."
+},
+{
+id: "05",
+question: "Can I get advice on furniture arrangement and interior design?",
+answer: "Yes, our experts provide guidance on furniture layout and design to help you create a functional and beautiful space."
+}
+];
+
 
 export default function Faqs() {
 

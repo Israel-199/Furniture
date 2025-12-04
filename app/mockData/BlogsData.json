@@ -1,62 +1,62 @@
 [
-    {
-        "id" :"1" ,
-        "image":"/blog-1.jpg",
-         "imageDet":"/blog-1.jpg",
-         "tag":"Power Tool",
-         "postby":"Admin",
-         "date":"June 2 , 2025",
-         "title":"Functional Design Trends that Blend style and comfort",
-         "desc":"Moder design is all creating a sleek"
-    },
-    {
-        "id" :"2" ,
-        "image":"/blog-2.jpg",
-         "imageDet":"/blog-1.jpg",
-         "tag":"Power Tool",
-         "postby":"Admin",
-         "date":"June 2 , 2025",
-         "title":"Functional Design Trends that Blend style and comfort",
-         "desc":"Moder design is all creating a sleek"
-    },
-    {
-        "id" :"3" ,
-        "image":"/blog-3.jpg",
-         "imageDet":"/blog-3.jpg",
-         "tag":"Power Tool",
-         "postby":"Admin",
-         "date":"June 2 , 2025",
-         "title":"Functional Design Trends that Blend style and comfort",
-         "desc":"Moder design is all creating a sleek"
-    },
-     {
-        "id" :"4" ,
-        "image":"/blog-4.jpg",
-         "imageDet":"/blog-4.jpg",
-         "tag":"Power Tool",
-         "postby":"Admin",
-         "date":"June 2 , 2025",
-         "title":"Functional Design Trends that Blend style and comfort",
-         "desc":"Moder design is all creating a sleek"
-    },
-     {
-        "id" :"5" ,
-        "image":"/blog-5.jpg",
-         "imageDet":"/blog-5.jpg",
-         "tag":"Power Tool",
-         "postby":"Admin",
-         "date":"June 2 , 2025",
-         "title":"Functional Design Trends that Blend style and comfort",
-         "desc":"Moder design is all creating a sleek"
-    },
-     {
-        "id" :"6" ,
-        "image":"/blog-6.jpg",
-         "imageDet":"/blog-6.jpg",
-         "tag":"Power Tool",
-         "postby":"Admin",
-         "date":"June 2 , 2025",
-         "title":"Functional Design Trends that Blend style and comfort",
-         "desc":"Moder design is all creating a sleek"
-    }
+{
+"id": "1",
+"image": "/blog-1.jpg",
+"imageDet": "/blog-1.jpg",
+"tag": "Sofa Collection",
+"postby": "Deluxe Furniture",
+"date": "June 2, 2025",
+"title": "Luxury Sofa Designs by Deluxe Furniture",
+"desc": "Explore our curated collection of sofas combining comfort, style, and premium craftsmanship."
+},
+{
+"id": "2",
+"image": "/blog-2.jpg",
+"imageDet": "/blog-2.jpg",
+"tag": "Wooden Furniture",
+"postby": "Deluxe Furniture",
+"date": "June 3, 2025",
+"title": "Elegant Wooden Pieces for Modern Homes",
+"desc": "Deluxe Furniture offers timeless wooden furniture that adds warmth and sophistication to any space."
+},
+{
+"id": "3",
+"image": "/blog-3.jpg",
+"imageDet": "/blog-3.jpg",
+"tag": "Interior Design",
+"postby": "Deluxe Furniture",
+"date": "June 4, 2025",
+"title": "Interior Tips for Stylish Living",
+"desc": "Discover how Deluxe Furniture’s designs can enhance both the aesthetics and functionality of your home."
+},
+{
+"id": "4",
+"image": "/blog-4.jpg",
+"imageDet": "/blog-4.jpg",
+"tag": "Outdoor Furniture",
+"postby": "Deluxe Furniture",
+"date": "June 5, 2025",
+"title": "Premium Outdoor Furniture by Deluxe",
+"desc": "Transform your patio or garden with Deluxe Furniture’s stylish and durable outdoor collections."
+},
+{
+"id": "5",
+"image": "/blog-5.jpg",
+"imageDet": "/blog-5.jpg",
+"tag": "Custom Furniture",
+"postby": "Deluxe Furniture",
+"date": "June 6, 2025",
+"title": "Bespoke Furniture Solutions from Deluxe",
+"desc": "Deluxe Furniture creates personalized pieces that perfectly match your home and style preferences."
+},
+{
+"id": "6",
+"image": "/blog-6.jpg",
+"imageDet": "/blog-6.jpg",
+"tag": "Home Decor",
+"postby": "Deluxe Furniture",
+"date": "June 7, 2025",
+"title": "Lighting & Decor Ideas by Deluxe Furniture",
+"desc": "Enhance your interiors with lighting and décor tips inspired by Deluxe Furniture’s signature style."
+}
 ]

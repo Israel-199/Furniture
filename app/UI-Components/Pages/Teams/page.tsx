@@ -12,28 +12,28 @@ import { Autoplay } from 'swiper/modules';
 import 'swiper/css';
 
 const testimonials = [
-    {
-        id: 1,
-        image: team1,
-        name: "John Doe",
-        role: "Interior Designer",
-        message: "aspirational interior designer with a passion for creating beautiful and functional spaces. With over 10 years of experience in the industry, John has worked on a wide range of projects, from residential homes to commercial spaces. His keen eye for detail and ability to understand his clients' needs have earned him a reputation as one of the top designers in the field."
-    },
-    {
-        id: 2,
-        image: team2,
-        name: "Jane Smith",
-        role: "Project Manager",
-        message: "Jane is an experienced project manager who ensures that all interior design projects are completed on time and within budget. She has a strong background in coordinating teams and managing client expectations, making her an invaluable asset to the company."
-    },
-    {
-        id: 3,
-        image: team3,
-        name: "Michael Johnson",
-        role: "Architect",
-        message: "Michael is a skilled architect with a deep understanding of structural design and aesthetics. He collaborates closely with the interior design team to ensure that every project is both beautiful and structurally sound."
-    }
-]
+{
+id: 1,
+image: team1,
+name: "Meron Tadesse",
+role: "Lead Interior Designer",
+message: "Meron is an innovative interior designer with extensive experience in both residential and commercial projects across Addis Ababa. He blends modern design trends with traditional Ethiopian aesthetics to create functional and inspiring spaces."
+},
+{
+id: 2,
+image: team2,
+name: "Samuel Kassahun",
+role: "Project Manager",
+message: "Samuel expertly manages project timelines and coordinates teams for furniture and interior design projects throughout Ethiopia. Her strong organizational skills and client-focused approach ensure high-quality results delivered on time."
+},
+{
+id: 3,
+image: team3,
+name: "Jhon smith",
+role: "Architect",
+message: "Jhon is a talented architect with deep knowledge of structural design and spatial planning. He works closely with the design team to integrate traditional Ethiopian materials and modern design principles, creating spaces that are both beautiful and practical."
+}
+];
 
 export default function Teams() {
     return (
@@ -53,7 +53,7 @@ export default function Teams() {
                         <span className="rounded-full title-span border border-gray-400 px-6 py-2 GolosText uppercase font-bold">Our Best Team</span>
                     </div>
                     <div className="w-full lg:w-2/3">
-                        <h1 className="CalSans text-4xl md:text-7xl w-full lg:w-[80%]">Meet The <span className='text-(--prim)'>Experts Our Interior</span>Designers</h1>
+                        <h1 className="CalSans text-4xl md:text-7xl w-full lg:w-[80%]">Meet The <span className='text-(--prim)'>Experts Our Furniture </span>Designers</h1>
                     </div>
                 </div>
                 <div className="mt-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 team-wrapper">
