@@ -6,18 +6,18 @@ import Footer from "./Footer/Footer";
 
 export default function ClientLayout({
     children,
-}:{
-    children:React.ReactNode;
+}: {
+    children: React.ReactNode;
 }) {
 
     const pathname = usePathname();
 
     const hideLayout = pathname === "/app/UI-Components/Pages/Page404";
-  return (
-    <>
-    {!hideLayout && <Navbar/>}
-    {children}
-    {!hideLayout && <Footer/>}
-    </>
-  )
+    return (
+        <>
+            {!hideLayout && <Navbar />}
+            {children}
+            {!hideLayout && <Footer />}
+        </>
+    )
 }
