@@ -11,7 +11,7 @@ export default function Footer() {
               <Image src={"/logo/delux.png"} alt="delux logo" width={140} height={140} />
             </Link>
             <h2 className="text-gray-300 text-lg my-5 GolosText">We transform your vision into beautifully crafted spaces.</h2>
-            <p className="text-gray-300 GolosText">5609 E Sprague Ave, Spokane Valley, WA 99212, USA</p>
+            <p className="text-gray-300 GolosText">Behind Mega Building, Meskel Flower Road, next to Mulushewa Butchery, Addis Ababa, Ethiopia</p>
           </div>
           <div className="footer-content py-3">
             <ul className="footer-links flex flex-col">
@@ -34,10 +34,8 @@ export default function Footer() {
             </ul>
           </div>
           <div className="footer-content py-3 flex flex-col">
-            <h2 className="text-3xl text-(--prim) underline CalSans mb-3">+251-115-580406</h2>
+            <h2 className="text-3xl text-(--prim) underline CalSans mb-3">+251-115-580406/08/12</h2>
             <h4 className="text-2xl text-gray-300 GolosText">info@deluxefurniture.et</h4>
-
-
             <div className="footer-social flex gap-3 py-6 cursor-pointer">
               <Link
                 href="https://web.facebook.com/deluxefurnitureethiopia#"
